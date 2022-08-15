@@ -6,74 +6,80 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TableRow android:background="#22ff">
+    <TableRow>
+    <TextView
+        android:id="@+id/TextTable"
+        android:layout_weight="1"
+        android:background="#b0b0b0"
+        android:gravity="center"
+        android:text="Row 3 colum 1"
+        android:padding="20dp"
+        android:textColor="#000000" />
 
         <TextView
-            android:layout_column="1"
-            android:text="Open...."
-            android:padding="3dp" />
-        <TextView
-            android:text="Ctrl-O"
-            android:gravity="right"
-            android:padding="3dp"/>
-    </TableRow>
-
-    <TableRow android:background="#22ff">
-        <TextView
-            android:layout_column="1"
-            android:text="Save...."
-            android:padding="3dp"/>
-        <TextView
-            android:gravity="right"
-            android:text="Ctrl-S"
-            android:padding="3dp"/>
+        android:id="@+id/texttable"
+        android:layout_weight="1"
+        android:background="#a09f9f"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Row 3 colum 2"
+        android:textColor="#000000"
+        android:paddingBottom="20dp"/>
     </TableRow>
 
     <TableRow>
         <TextView
-            android:layout_column="1"
-            android:text="Save As...."
-            android:padding="3dp"/>
-        <TextView
-            android:gravity="right"
-            android:text="Ctrl-Shift-S"
-            android:padding="3dp"/>
+        android:layout_weight="1"
+        android:background="#a09f"
+        android:gravity="center"
+        android:padding="20dp"
+            android:textStyle="bold"
+        android:text="Row 4 colum 3"
+        android:textColor="#000000"/>
     </TableRow>
 
-    <View
-        android:layout_height="2dp"
-        android:background="#ff9099090"/>
+    <TableRow android:background="@color/black">
 
-    <TableRow android:background="#ffff00">
         <TextView
-            android:text="X"
-            android:padding="3dp"/>
+            android:id="@+id/TextTable1"
+            android:layout_weight="1"
+            android:background="#a09"
+            android:gravity="center"
+            android:text="Row 5 colum 4"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:layout_margin="1dp"
+            android:textColor="#000000" />
+
         <TextView
-            android:text="Import...."
-            android:padding="3dp"/>
+            android:id="@+id/texttable2"
+            android:layout_weight="5"
+            android:layout_margin="1dp"
+            android:background="#a09"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:text="Row 5 colum 5"
+            android:textColor="#000000"
+            android:paddingBottom="20dp"/>
+
+
+        <TextView
+            android:id="@+id/texttable3"
+            android:layout_weight="1"
+            android:background="#a09"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_margin="1dp"
+            android:padding="20dp"
+            android:text="Row 5 colum 6"
+            android:textColor="#000000"
+            android:paddingBottom="20dp"/>
+
+
+
+
     </TableRow>
 
-    <TableRow android:background="#ffff00">
-        <TextView
-            android:text="X"
-            android:padding="3dp" />
-        <TextView
-            android:text="Export...."
-            android:padding="3dp" />
-        <TextView
-            android:text="Ctrl-E"
-            android:gravity="right"
-            android:padding="3dp" />
-    </TableRow>
 
-    <View
-        android:layout_height="2dp"
-        android:background="FF909090" />
-
-    <TableRow android:background="#aaf">
-        <TextView
-            android:layout_column="1"
-            android:text="Quit"
-            android:padding="3dp"/>
-    </TableRow>
 </TableLayout>
